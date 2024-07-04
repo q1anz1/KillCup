@@ -5,7 +5,7 @@ This is a server MOD! It's only useful if your are master! Entertainment only! C
   
 使用MCreator创造
 
-v1.0.1为最新版！！！按下G键可持续锁头
+v1.0.2为最新版！！！按下G键可持续锁头
 
 低头键目前没有用，还在开发中
 
