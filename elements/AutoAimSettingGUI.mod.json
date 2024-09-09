@@ -1,0 +1,93 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "64",
+          "name": "radius",
+          "width": 28,
+          "height": 20,
+          "x": 204,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_radius",
+          "text": {
+            "fixedValue": "Radius:"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 159,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ok",
+          "text": "OK",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "AutoAimSettingClose"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 204,
+          "y": 152
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "targetPlayer",
+          "text": "Target Player",
+          "isCheckedProcedure": {
+            "name": "IsTargetPlayer"
+          },
+          "x": 258,
+          "y": 152
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "targetVillager",
+          "text": "Target Villager",
+          "isCheckedProcedure": {
+            "name": "IsTargetVillager"
+          },
+          "x": 258,
+          "y": 116
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "AutoAimSettingGUILoad"
+    },
+    "onClosed": {
+      "name": "AutoAimSettingGUISave"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

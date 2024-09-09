@@ -1,0 +1,280 @@
+{
+  "mod_elements": [
+    {
+      "name": "AutoAimOn",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_aim_on",
+      "metadata": {
+        "files": [
+          "src/main/java/com/mcreator/network/AutoAimOnMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "AutoFuck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_fuck",
+      "metadata": {
+        "files": [
+          "src/main/java/com/mcreator/procedures/AutoFuckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AutoFuckOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_fuck_on",
+      "metadata": {
+        "files": [
+          "src/main/java/com/mcreator/procedures/AutoFuckOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AutoAimSetting",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_aim_setting",
+      "metadata": {
+        "files": [
+          "src/main/java/com/mcreator/network/AutoAimSettingMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "AutoAimSettingGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_aim_setting_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/mcreator/client/gui/AutoAimSettingGUIScreen.java",
+          "src/main/java/com/mcreator/world/inventory/AutoAimSettingGUIMenu.java",
+          "src/main/java/com/mcreator/network/AutoAimSettingGUIButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "AutoAimSettingGUIOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_aim_setting_gui_open",
+      "metadata": {
+        "files": [
+          "src/main/java/com/mcreator/procedures/AutoAimSettingGUIOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AutoAimSettingClose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_aim_gui_close",
+      "metadata": {
+        "files": [
+          "src/main/java/com/mcreator/procedures/AutoAimSettingCloseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AutoAimSettingGUILoad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_aim_setting_gui_load",
+      "metadata": {
+        "files": [
+          "src/main/java/com/mcreator/procedures/AutoAimSettingGUILoadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AutoAimSettingGUISave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_aim_setting_gui_save",
+      "metadata": {
+        "files": [
+          "src/main/java/com/mcreator/procedures/AutoAimSettingGUISaveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AutoAimRadiusLoading",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_aim_radius_loading",
+      "metadata": {
+        "files": [
+          "src/main/java/com/mcreator/procedures/AutoAimRadiusLoadingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "radius",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "isOn",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "isTargetPlayer",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "isTargetVillager",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "language_map": {
+    "en_us": {
+      "gui.killcup.auto_aim_setting_gui.radius": "64",
+      "gui.killcup.auto_aim_setting_gui.targetPlayer": "Target Player",
+      "gui.killcup.auto_aim_setting_gui.targetVillager": "Target Villager",
+      "gui.killcup.auto_aim_setting_gui.label_radius": "Radius:",
+      "gui.killcup.auto_aim_setting_gui.label_qing_wu_fang_kong": "please don\u0027t let radius be empty",
+      "gui.killcup.auto_aim_setting_gui.button_ok": "OK",
+      "key.killcup.auto_aim_setting": "Auto Aim Setting",
+      "key.killcup.auto_aim_on": "AutoOn"
+    },
+    "zh_cn": {
+      "gui.killcup.auto_aim_setting_gui.radius": "",
+      "gui.killcup.auto_aim_setting_gui.targetPlayer": "Target Player",
+      "gui.killcup.auto_aim_setting_gui.targetVillager": "Target Villager",
+      "gui.killcup.auto_aim_setting_gui.label_radius": "Radius:",
+      "gui.killcup.auto_aim_setting_gui.label_qing_wu_fang_kong": "please don\u0027t let radius be empty",
+      "gui.killcup.auto_aim_setting_gui.button_ok": "OK",
+      "key.killcup.auto_aim_setting": "Auto Aim Setting",
+      "key.killcup.auto_aim_on": "自瞄键（按下开启）"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "killcup",
+    "modName": "KillCup",
+    "version": "1.0.0",
+    "description": "Auto Aim for Minecraft 1.20.1 forge47.2.0",
+    "author": "q1anz1, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": true,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "com.mcreator"
+  },
+  "mcreatorVersion": 202400118518
+}
